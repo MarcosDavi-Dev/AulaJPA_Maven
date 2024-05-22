@@ -9,10 +9,11 @@ import javax.persistence.Id;
 
 @Entity
 public class Pessoa implements Serializable {
+	private static final long serialVersionUID = 1L;	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private static final long serialVersionUID = 1L;
+	
 	
 	private Integer id;
 	private String nome;
